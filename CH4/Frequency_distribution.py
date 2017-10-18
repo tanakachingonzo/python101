@@ -76,14 +76,21 @@ def frequencyChart(alist):
         chartT.up()
 
     # SV - add code to plot mean in red
+    m=mean(alist)
     chartT.up()
     chartT.color("blue")
-    chartT.goto(mean(alist)-1, 0)
+    chartT.goto(m-1, 0)
     chartT.down()
-    chartT.goto(mean(alist)-1,2)
+    chartT.goto(m-1, 2)
 
 
     # SV - add code to plot stdv
+    s=standardDev(alist)
+    chartT.up()
+    chartT.color("red")
+    chartT.goto(s-1, 0)
+    chartT.down()
+    chartT.goto(s-1, 2)
     wn.exitonclick()
 
 

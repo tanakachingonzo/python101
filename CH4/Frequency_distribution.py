@@ -2,13 +2,13 @@ import turtle
 import math
 
 
-#
+#Code to calculate the mean
 def mean(alist):
     mean = sum(alist) / len(alist)
     return mean
 
 
-#
+#Calculating the standard deviation
 def standardDev(alist):
     theMean = mean(alist)
 
@@ -24,10 +24,10 @@ def standardDev(alist):
 
 #
 def frequencyChart(alist):
-    #
+    #Create empty dictionary
     countdict = {}
 
-    #
+    #Counting frequency of value in dictionary
     for item in alist:
         if item in countdict:
             countdict[item] = countdict[item] + 1
@@ -57,7 +57,7 @@ def frequencyChart(alist):
     chartT.goto(maxitem, 0)
     chartT.up()
 
-    #
+    #Code to write labels for x axis
     chartT.goto(-1, 0)
     chartT.write("0", font=("Helvetica", 16, "bold"))
     chartT.goto(-1, maxcount)
@@ -76,6 +76,12 @@ def frequencyChart(alist):
         chartT.up()
 
     # SV - add code to plot mean in red
+    chartT.up()
+    chartT.color("blue")
+    chartT.goto(mean(alist)-1, 0)
+    chartT.down()
+    chartT.goto(mean(alist)-1,2)
+
 
     # SV - add code to plot stdv
     wn.exitonclick()
@@ -89,6 +95,6 @@ lst3 = [3, 3, 5, 7, 1, 2, 5, 2, 3, 4, 6, 3, 4, 6, 3, 4, 5, 6, 6]
 #
 # frequencyChart(lst1)
 # frequencyChart(lst2)
-frequencyChart(lst2)
+frequencyChart(lst3)
 
 

@@ -47,4 +47,5 @@ Burlington has this much rain:36.94
 Carroll has this much rain:33.33
 
 Cascade has this much rain:33.48
-City with max rain:+maxRainCity+
+City with max rain:38.02
+City with min rain:25.81

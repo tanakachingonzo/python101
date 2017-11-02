@@ -18,3 +18,15 @@ for line in file_out:
 file_in.close()
 file_out.close()
 
+a= 3.97777
+b=54
+
+#print a in a 20-character space, right aligned, and with 22 decimals.
+print("a is %20.2f and b is %d" %(a,b))
+
+#print a ina  20-character space, left aligned, and with two decimals, in the same row print b.
+print("a is %-20.2f and b is %d")
+
+#print a in a 20-character space, right aligned with 2 decimals, and fill in with leading zeros.
+print("%020.2f" %(a) )
+

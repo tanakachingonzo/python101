@@ -25,12 +25,4 @@ def wordFreqency():
         space = ("_"*40)
         print("%-20s %+20s \n%s"%(x, wordlist[x], space))	
 	
-
 wordFreqency()
-
-	
-
-
-
-
-

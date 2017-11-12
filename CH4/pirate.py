@@ -5,10 +5,10 @@
 # English=['avast','arrr','matey']
 
 pirate = {
-'hello':'avast'
-'sir':'matey'
-'excuse':'arr'
-'me':'me'}
+"hello":"avast",
+"sir":"matey",
+"excuse":"arr",
+"me":"me"}
 phrase= "hello sir excuse"
 split_phrase=phrase.split(" ")
 print(split_phrase)
